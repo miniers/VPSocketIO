@@ -6,7 +6,6 @@
 //  Copyright © 2017 Vasily Popov. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 //! Project version number for VPSocketIO_iOS.
 FOUNDATION_EXPORT double VPSocketIOVersionNumber;
