@@ -85,6 +85,11 @@ NSString *const kSocketEventStatusChange       = @"statusChange";
             {
                 _reconnects = [value boolValue];
             }
+            
+            if([key isEqualToString:@"reconnectWait"])
+            {
+                _reconnectWait = [value intValue];
+            }
             if([key isEqualToString:@"reconnectAttempts"])
             {
                 reconnectAttempts = [value intValue];

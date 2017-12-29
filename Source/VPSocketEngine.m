@@ -704,22 +704,15 @@
     }
     else
     {
-        if(_websocket)
+        _connected = NO;
+        _websocket = NO;
+        
+        NSString *reason = @"Socket Disconnected";
+        if(error.localizedDescription.length > 0)
         {
-            [self flushProbeWait];
+            reason = error.localizedDescription;
         }
-        else
-        {
-            _connected = NO;
-            _websocket = NO;
-            
-            NSString *reason = @"Socket Disconnected";
-            if(error.localizedDescription.length > 0)
-            {
-                reason = error.localizedDescription;
-            }
-            [self closeOutEngine:reason];
-        }
+        [self closeOutEngine:reason];
     }
 }
 
