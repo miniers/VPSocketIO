@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT' }
   s.author       = { "Vasily Popov" => "vasily.popov.it@gmail.com" }
   s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'
   s.requires_arc = true
   s.source = {
     :git => "https://github.com/vascome/VPSocketIO.git",
